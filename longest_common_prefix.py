@@ -1,9 +1,9 @@
 class Solution:
     def longestCommonPrefix(self, strs: List[str]) -> str:    
         res = ""
-        
+        if not strs:
+            return res
         short_str = min(range(len(strs)), key=lambda i: len(strs[i]))
-
         for j in range(len(strs[short_str])):
             try_set = set()
             for i in range(len(strs)):
