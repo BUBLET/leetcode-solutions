@@ -12,9 +12,5 @@ class Solution:
         # Если по итогам цикла первый элемент списка 0 - вставляем в начало 1
         if digits[0] == 0:
             digits.insert(0, 1)
-
-        # Если cписок состоял только из 9, то добавляем 0 в конец
-        if len(digits) == 1 :
-            digits.append(0)
         
         return digits
