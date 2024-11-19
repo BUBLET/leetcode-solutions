@@ -21,4 +21,4 @@ class Solution:
         current.next = list1 if list1 else list2
 
         # Шаг 4: Возвращаем голову нового списка (без фиктивного узла)
-        return new.next
+        return new.next 
