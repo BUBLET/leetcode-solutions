@@ -1,12 +1,12 @@
 from typing import List
 
 class Solution:
-    def generate(self, numRows: int) -> List[List[int]]:
+    def getRow(self, rowIndex: int) -> List[int]:
         res = []
-
+        res_add = []
         i = 0
 
-        while i < numRows:
+        while i < rowIndex+1:
             res_add = []
             if len(res) == 0:
                 res_add = [1]
@@ -23,4 +23,5 @@ class Solution:
                 res_add.append(1)
                 res.append(res_add)
                 i += 1
-        return res
+        return res_add
+    
